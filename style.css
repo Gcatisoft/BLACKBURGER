@@ -1,0 +1,309 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #0a0808;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Imágenes escalables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Videos o mapas embebidos */
+iframe, video {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+/* Textos fluidos */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #000, #111 60%, #e4002b);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #f8d000;
+}
+
+/* ===== SECCIONES DE MENÚ ===== */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #f8d000;
+  text-transform: uppercase;
+  border-bottom: 3px solid #e4002b;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* ===== ITEMS DE MENÚ ===== */
+.burger {
+  background: #1a1a1a;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.burger:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.9);
+}
+
+.burger h3 {
+  font-size: 24px;
+  color: #f8d000;
+  margin-bottom: 10px;
+}
+
+.burger p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.burger p.precio {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #d4af0b;
+}
+
+/* ===== IMAGENES ===== */
+.menu-img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.7);
+}
+
+/* ===== UBICACIÓN MAPA ===== */
+.ubicacion {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ubicacion h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #f8d000;
+}
+
+.ubicacion iframe {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+.btn-whatsapp {
+  display: block;
+  background-color: #25d366;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin: 40px auto;
+  max-width: 320px;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
+/* ===== REDES SOCIALES ===== */
+.redes-sociales {
+  margin: 40px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: #fff;
+  font-size: clamp(20px, 5vw, 30px);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #f8d000;
+  transform: scale(1.2);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  border-top: 2px solid #e4002b;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* Tablets */
+@media (max-width: 991px) {
+  header h1 {
+    font-size: 38px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .menu h2 {
+    font-size: 28px;
+  }
+
+  .burger {
+    padding: 20px;
+  }
+
+  .burger h3 {
+    font-size: 20px;
+  }
+
+  .burger p {
+    font-size: 15px;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  header {
+    padding: 25px 15px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .menu {
+    padding: 40px 15px;
+  }
+
+  .menu h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .burger {
+    padding: 18px;
+    margin: 20px auto;
+  }
+
+  .burger h3 {
+    font-size: 18px;
+  }
+
+  .burger p {
+    font-size: 14px;
+  }
+
+  .burger p.precio {
+    font-size: 16px;
+  }
+
+  .btn-whatsapp {
+    width: 80%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+  }
+}
+
+/* Celulares chicos */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .menu h2 {
+    font-size: 20px;
+  }
+
+  .burger {
+    padding: 15px;
+  }
+
+  .burger h3 {
+    font-size: 16px;
+  }
+
+  .burger p {
+    font-size: 13px;
+  }
+
+  .btn-whatsapp {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
